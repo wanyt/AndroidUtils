@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.wanyt.androidutils.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            style="@style/StyleLinearLayout">
+            <TextView
+                android:id="@+id/tv_statusbar_height"
+                android:hint="状态栏高度"
+                style="@style/TextShowValue"/>
+            <Button
+                android:id="@+id/bt_statusbar_height"
+                android:text="获取状态栏高度"
+                style="@style/ButtonText" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/StyleLinearLayout">
+            <TextView
+                android:id="@+id/tv_isphonesleeping"
+                android:hint="睡眠状态"
+                style="@style/TextShowValue"/>
+            <Button
+                android:id="@+id/bt_isphonesleeping"
+                android:text="设备是否处于睡眠状态"
+                style="@style/ButtonText" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/StyleLinearLayout">
+            <TextView
+                android:id="@+id/tv_isfg"
+                android:hint="是否处于前台"
+                style="@style/TextShowValue"/>
+            <Button
+                android:id="@+id/bt_isfg"
+                android:text="应用是否处于前台"
+                style="@style/ButtonText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="right"
+            style="@style/StyleLinearLayout">
+            <ImageView
+                android:id="@+id/iv_appicon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="30dp"/>
+            <Button
+                android:id="@+id/bt_appicon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获取应用图标"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/StyleLinearLayout">
+            <TextView
+                android:id="@+id/tv_opennet"
+                android:hint="http://www.baidu.com"
+                style="@style/TextShowValue"/>
+            <Button
+                android:id="@+id/bt_opennet"
+                android:text="在浏览器中打开网址"
+                style="@style/ButtonText" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/StyleLinearLayout">
+            <TextView
+                android:hint="北京"
+                style="@style/TextShowValue"/>
+            <Button
+                android:id="@+id/bt_openmap"
+                android:text="在地图中显示位置"
+                style="@style/ButtonText" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/StyleLinearLayout">
+            <TextView
+                android:id="@+id/tv_appversion"
+                android:hint="当前应用版本"
+                style="@style/TextShowValue"/>
+            <Button
+                android:id="@+id/bt_showappversion"
+                android:text="应用版本"
+                style="@style/ButtonText" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/StyleLinearLayout">
+            <TextView
+                android:id="@+id/tv_imei"
+                android:hint="IMEI"
+                style="@style/TextShowValue"/>
+            <Button
+                android:id="@+id/bt_imei"
+                android:text="获取设备IMEI"
+                style="@style/ButtonText" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/StyleLinearLayout">
+            <TextView
+                android:id="@+id/tv_mac"
+                android:hint="MAC"
+                style="@style/TextShowValue"/>
+            <Button
+                android:id="@+id/bt_mac"
+                android:text="获取设备MAC"
+                style="@style/ButtonText" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/StyleLinearLayout">
+            <TextView
+                android:id="@+id/tv_operator"
+                android:hint="设备运营商"
+                style="@style/TextShowValue"/>
+            <Button
+                android:id="@+id/bt_operator"
+                android:text="获取设备运营商"
+                style="@style/ButtonText" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
