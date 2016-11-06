@@ -18,6 +18,21 @@
         <LinearLayout
             style="@style/StyleLinearLayout">
             <TextView
+                android:hint="Toast"
+                style="@style/TextShowValue"/>
+            <Button
+                android:id="@+id/bt_toast_long"
+                android:text="LENGTH_LONG"
+                style="@style/ButtonText" />
+            <Button
+                android:id="@+id/bt_toast_short"
+                android:text="LENGTH_short"
+                style="@style/ButtonText" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/StyleLinearLayout">
+            <TextView
                 android:id="@+id/tv_statusbar_height"
                 android:hint="状态栏高度"
                 style="@style/TextShowValue"/>

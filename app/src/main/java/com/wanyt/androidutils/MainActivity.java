@@ -8,6 +8,7 @@ import android.widget.TextView;
 import com.wanyt.androidutils.utils.CommonUtil;
 import com.wanyt.androidutils.utils.UtilsApplication;
 import com.wanyt.androidutils.utils.UtilsDevice;
+import com.wanyt.androidutils.widget.MyToast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -37,6 +38,16 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+    }
+
+    @OnClick(R.id.bt_toast_short)
+    public void toastShort(){
+        MyToast.show(this, "short");
+    }
+
+    @OnClick(R.id.bt_toast_long)
+    public void toastLong(){
+        MyToast.showLong(this, "long");
     }
 
     @OnClick(R.id.bt_statusbar_height)
